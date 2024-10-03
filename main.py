@@ -23,18 +23,26 @@ class Memoryletters:
 correctAnswer = Memoryletters([])
 lettersToGuessOn = correctAnswer.printRandomLetters()
 guesses = 0
-
+24
 def guessing(): 
    user_guess_list = []
    print('\nNow try to remember what you saw!', end="")
-   time.sleep(1)
+   time.sleep(2)
    user_guess = input("Enter each number in order")
    for i in user_guess:    
        user_guess_list.append(i)
    return user_guess_list
 
-while True:
+
+def shuffleNumbers():
    shuffled_list = []
+   for i in correctAnswer.letters:
+       shuffled_list.append(i)
+       random.shuffle(shuffled_list)
+   return shuffled_list
+   
+
+while True:  
    print("\rPlease try to remember these numbers, and their order...", end="")
    time.sleep(2)
 
@@ -42,7 +50,8 @@ while True:
    time.sleep(10)
    
    subprocess.run('clear', shell=True)
-   
+   shuffled_list = shuffleNumbers()
+   print("\r", shuffled_list, end="")
    user_guess_list = guessing()
    
    guesses += 1
