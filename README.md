@@ -47,7 +47,7 @@ This function assess if the user_guess_list and its content is the same as the c
 
 If the user types the wrong answer he or she will have to guess again. That until he or she types the correct answer.
 
-The else argument instead prints the correct answer again and invite the user to try again. If the else argument runs the while loop will not stop. The game and the while loop will run until the user guesses the correct answer.
+The else argument instead prints the correct answer again and invite the user to try again. The game and the while loop will run until the user guesses the correct answer.
 
 ```python
 while True
