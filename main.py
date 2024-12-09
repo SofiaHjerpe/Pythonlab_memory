@@ -64,7 +64,7 @@ while True:
    if user_guess_list == correctAnswer.numbers: 
        print("Congratulations!! That was correct!!")
        print("you made", guesses ,"guesses")
-       break;
+       break
    else: 
        print("the correct answer was:", correctAnswer.numbers)
        print("please try again")

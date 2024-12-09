@@ -52,11 +52,11 @@ The else argument instead prints the correct answer again and invite the user to
 ```python
 while True
 ###../../.
- if user_guess_list == correctAnswer.numbers: 
+ if user_guess_list == correctAnswer.numbers:
        print("Congratulations!! That was correct!!")
        print("you made", guesses ,"guesses")
-       break;
-   else: 
+       break,
+   else:
        print("the correct answer was:", correctAnswer.numbers)
        print("please try again")
        correctAnswer.numbers = []
